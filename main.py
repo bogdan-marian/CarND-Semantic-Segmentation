@@ -129,6 +129,7 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     dropout = 0.5
 
     for epoch in range(epochs):
+        print("Training epoch " + epoch)
         for images, labels in get_batches_fn(batch_size):
             # Training
             sess.run(train_op, feed_dict={input_image: images,
@@ -154,8 +155,8 @@ def run():
     #  https://www.cityscapes-dataset.com/
 
     #parameters
-    epochs = 20
-    batch_size = 10
+    epochs = 10
+    batch_size = 20
 
     print("Training " + str(epochs) + " epochs for batch size " + str(batch_size))
 
