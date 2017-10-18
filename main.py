@@ -126,7 +126,7 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     """
     # TODO: Implement function
 
-    for epoch in epochs:
+    for epoch in range(epochs):
         for images, labels in get_batches_fn(batch_size):
             # Training
             sess.run(train_op, feed_dict={input_image: images,
