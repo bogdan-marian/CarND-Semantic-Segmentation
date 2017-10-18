@@ -156,7 +156,7 @@ def run():
 
     #parameters
     epochs = 10
-    batch_size = 20
+    batch_size = 15
 
     print("Training " + str(epochs) + " epochs for batch size " + str(batch_size))
 
