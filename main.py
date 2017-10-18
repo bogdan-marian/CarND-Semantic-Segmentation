@@ -129,7 +129,7 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     dropout = 0.5
 
     for epoch in range(epochs):
-        print("Training epoch " + epoch)
+        print("Training epoch ", epoch)
         for images, labels in get_batches_fn(batch_size):
             # Training
             sess.run(train_op, feed_dict={input_image: images,
