@@ -159,8 +159,8 @@ def run():
     #  https://www.cityscapes-dataset.com/
 
     #parameters
-    epochs = 10
-    batch_size = 15
+    epochs = 20
+    batch_size = 18
 
     print("Training " + str(epochs) + " epochs for batch size " + str(batch_size))
 
